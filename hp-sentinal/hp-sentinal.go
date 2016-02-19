@@ -18,7 +18,7 @@ func sendResponse(conn *net.UDPConn, addr *net.UDPAddr) {
 func main() {
     p := make([]byte, 2048)
     addr := net.UDPAddr{
-        Port: 1234,
+        Port: 5093,
         IP: net.ParseIP("0.0.0.0"),
     }
     ser, err := net.ListenUDP("udp", &addr)
